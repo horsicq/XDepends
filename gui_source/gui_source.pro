@@ -15,3 +15,8 @@ FORMS += \
     guimainwindow.ui
 
 include(../build.pri)
+
+!contains(XCONFIG, xoptions) {
+    XCONFIG += xoptions
+    include(../XOptions/xoptions.pri)
+}

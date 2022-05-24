@@ -18,18 +18,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include "guimainwindow.h"
-#include "ui_guimainwindow.h"
+#ifndef _GLOBAL_H
+#define _GLOBAL_H
 
-GuiMainWindow::GuiMainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::GuiMainWindow)
-{
-    ui->setupUi(this);
-}
+#include <QString>
 
-GuiMainWindow::~GuiMainWindow()
-{
-    delete ui;
-}
+#define X_APPLICATIONDISPLAYNAME "XDepends"
+#define X_APPLICATIONNAME "xdepends"
+#define X_APPLICATIONVERSION "0.01"
+#define X_ORGANIZATIONNAME "NTInfo"
+#define X_ORGANIZATIONDOMAIN "ntinfo.biz"
+#define X_OPTIONSFILE "xdepends.ini"
+#define X_SHORTCUTSFILE "shortcuts.ini"
 
+#endif // _GLOBAL_H
