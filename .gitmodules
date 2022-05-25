@@ -25,9 +25,6 @@
 [submodule "XHashWidget"]
 	path = XHashWidget
 	url = https://github.com/horsicq/XHashWidget
-[submodule "XDisasm"]
-	path = XDisasm
-	url = https://github.com/horsicq/XDisasm
 [submodule "XCapstone"]
 	path = XCapstone
 	url = https://github.com/horsicq/XCapstone
@@ -46,9 +43,6 @@
 [submodule "FormatWidgets"]
 	path = FormatWidgets
 	url = https://github.com/horsicq/FormatWidgets
-[submodule "QHexView"]
-	path = QHexView
-	url = https://github.com/horsicq/QHexView
 [submodule "XHexView"]
 	path = XHexView
 	url = https://github.com/horsicq/XHexView
@@ -76,9 +70,6 @@
 [submodule "XDemangleWidget"]
 	path = XDemangleWidget
 	url = https://github.com/horsicq/XDemangleWidget
-[submodule "XLLVMDemangler"]
-	path = XLLVMDemangler
-	url = https://github.com/horsicq/XLLVMDemangler
 [submodule "build_tools"]
 	path = build_tools
 	url = https://github.com/horsicq/build_tools
