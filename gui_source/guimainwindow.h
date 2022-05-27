@@ -27,6 +27,10 @@
 #include <QMainWindow>
 #include <QMimeData>
 #include "xoptions.h"
+#include "xformats.h"
+#include "dialogpe.h"
+#include "dialogoptions.h"
+#include "dialogshortcuts.h"
 
 namespace Ui {
 class GuiMainWindow;
@@ -36,11 +40,40 @@ class GuiMainWindow : public QMainWindow
 {
     Q_OBJECT
 
+    enum MODE
+    {
+        MODE_UNKNOWN=0,
+        MODE_FILE,
+        MODE_PROCESS
+    };
+
 public:
-    GuiMainWindow(QWidget *parent = nullptr);
+    GuiMainWindow(QWidget *pParent=nullptr);
     ~GuiMainWindow();
+
+private slots:
+    void adjustWindow();
+    void processFile(QString sFileName);
+    void closeCurrent();
+    void on_pushButtonFile_clicked();
+    void on_pushButtonProcess_clicked();
+    void on_pushButtonViewer_clicked();
+    void on_pushButtonSave_clicked();
+    void on_pushButtonReload_clicked();
+    void on_pushButtonOptions_clicked();
+    void on_pushButtonShortcuts_clicked();
+    void on_pushButtonAbout_clicked();
+    void on_pushButtonExit_clicked();
+
+protected:
+    void dragEnterEvent(QDragEnterEvent *pEvent) override;
+    void dragMoveEvent(QDragMoveEvent *pEvent) override;
+    void dropEvent(QDropEvent *pEvent) override;
 
 private:
     Ui::GuiMainWindow *ui;
+    XOptions g_xOptions;
+    XShortcuts g_xShortcuts;
+    MODE g_mode;
 };
 #endif // GUIMAINWINDOW_H
