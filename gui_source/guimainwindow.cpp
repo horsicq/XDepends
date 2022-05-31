@@ -99,6 +99,20 @@ void GuiMainWindow::closeCurrent()
     // TODO
 }
 
+void GuiMainWindow::setMode(MODE mode)
+{
+    if(mode==MODE_FILE)
+    {
+        ui->checkBoxRecursive->show();
+    }
+    else if(mode==MODE_PROCESS)
+    {
+        ui->checkBoxRecursive->hide();
+    }
+
+    g_mode=mode;
+}
+
 void GuiMainWindow::on_pushButtonFile_clicked()
 {
 
@@ -180,4 +194,9 @@ void GuiMainWindow::dropEvent(QDropEvent *pEvent)
             processFile(sFileName);
         }
     }
+}
+
+void GuiMainWindow::on_checkBoxRecursive_toggled(bool bChecked)
+{
+    // TODO
 }

@@ -55,6 +55,7 @@ private slots:
     void adjustWindow();
     void processFile(QString sFileName);
     void closeCurrent();
+    void setMode(MODE mode);
     void on_pushButtonFile_clicked();
     void on_pushButtonProcess_clicked();
     void on_pushButtonViewer_clicked();
@@ -64,6 +65,7 @@ private slots:
     void on_pushButtonShortcuts_clicked();
     void on_pushButtonAbout_clicked();
     void on_pushButtonExit_clicked();
+    void on_checkBoxRecursive_toggled(bool bChecked);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
