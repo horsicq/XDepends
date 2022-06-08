@@ -26,11 +26,12 @@
 #include <QFileDialog>
 #include <QMainWindow>
 #include <QMimeData>
-#include "xoptions.h"
-#include "xformats.h"
-#include "dialogpe.h"
+#include "dialogattachprocess.h"
 #include "dialogoptions.h"
+#include "dialogpe.h"
 #include "dialogshortcuts.h"
+#include "xformats.h"
+#include "xoptions.h"
 
 namespace Ui {
 class GuiMainWindow;

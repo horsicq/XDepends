@@ -27,3 +27,8 @@ XCONFIG += use_extrabuttons
     include(../archive_widget/archive_widget.pri)
 }
 
+!contains(XCONFIG, dialogattachprocess) {
+    XCONFIG += dialogattachprocess
+    include(../../_mylibs/XProcessWidget/dialogattachprocess.pri)
+}
+

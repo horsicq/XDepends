@@ -120,7 +120,12 @@ void GuiMainWindow::on_pushButtonFile_clicked()
 
 void GuiMainWindow::on_pushButtonProcess_clicked()
 {
+    DialogAttachProcess dialogAttachProcess(this);
 
+    if(dialogAttachProcess.exec()==QDialog::Accepted)
+    {
+        // TODO
+    }
 }
 
 void GuiMainWindow::on_pushButtonViewer_clicked()
