@@ -154,3 +154,6 @@
 [submodule "XHexEdit"]
 	path = XHexEdit
 	url = https://github.com/horsicq/XHexEdit.git
+[submodule "XStaticUnpacker"]
+	path = XStaticUnpacker
+	url = https://github.com/horsicq/XStaticUnpacker
