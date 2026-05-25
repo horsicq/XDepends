@@ -1,0 +1,8 @@
+translations/*.qm
+res/windows/resource.rc
+res/windows/resource_icon.rc
+res/macos/Info.plist
+res/license.txt
+res/readme.txt
+build/
+release/

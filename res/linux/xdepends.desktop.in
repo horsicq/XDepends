@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=@PROJECT_VERSION@
+Type=Application
+Name=XDepends
+Comment=Dependency viewer
+TryExec=xdepends
+Exec=xdepends
+Icon=xdepends
+Terminal=false
+Categories=Development;
