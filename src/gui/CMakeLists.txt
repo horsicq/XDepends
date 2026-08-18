@@ -67,6 +67,7 @@ target_link_libraries(XDepends PRIVATE
     lzma
     zlib
     ppmd
+    xarchive_7zip
     capstone
     xsimd
     Qt${XDEPENDS_QT_MAJOR}::Widgets
