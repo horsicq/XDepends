@@ -30,6 +30,7 @@ endif()
 
 file(STRINGS "${CMAKE_CURRENT_LIST_DIR}/../release_version.txt" X_PROJECT_VERSION)
 project(XDepends VERSION ${X_PROJECT_VERSION} LANGUAGES CXX)
+option(USE_DIE "Enable Detect It Easy integration" ON)
 
 set(X_COMPANYNAME    "ntinfo")
 set(X_PROJECTNAME    "XDepends")
