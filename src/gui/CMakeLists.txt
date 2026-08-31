@@ -1,6 +1,5 @@
 include(../../dep/build_tools/cmake/cpp_standart_setup.cmake)
 
-add_definitions(-DUSE_ARCHIVE)
 add_definitions(-DUSE_XPROCESS)
 
 include(${CMAKE_CURRENT_LIST_DIR}/../../dep/archive_widget/archive_widget.cmake)
