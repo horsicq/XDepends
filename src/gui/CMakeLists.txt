@@ -60,10 +60,6 @@ set_target_properties(XDepends PROPERTIES
 target_include_directories(XDepends PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(XDepends PRIVATE
-    bzip2
-    lzma
-    zlib
-    ppmd
     capstone
     xsimd
     Qt${XDEPENDS_QT_MAJOR}::Widgets
