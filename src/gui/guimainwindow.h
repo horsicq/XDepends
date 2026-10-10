@@ -37,19 +37,17 @@ namespace Ui {
 class GuiMainWindow;
 }
 
-class GuiMainWindow : public QMainWindow
-{
+class GuiMainWindow : public QMainWindow {
     Q_OBJECT
 
-    enum MODE
-    {
-        MODE_UNKNOWN=0,
+    enum MODE {
+        MODE_UNKNOWN = 0,
         MODE_FILE,
         MODE_PROCESS
     };
 
 public:
-    GuiMainWindow(QWidget *pParent=nullptr);
+    GuiMainWindow(QWidget *pParent = nullptr);
     ~GuiMainWindow();
 
 private slots:
@@ -79,4 +77,4 @@ private:
     XShortcuts g_xShortcuts;
     MODE g_mode;
 };
-#endif // GUIMAINWINDOW_H
+#endif  // GUIMAINWINDOW_H

@@ -24,11 +24,11 @@
 #include <QtGlobal>
 
 #define X_APPLICATIONDISPLAYNAME "XDepends"
-#define X_APPLICATIONNAME        "xdepends"
-#define X_APPLICATIONVERSION     "0.01"
-#define X_ORGANIZATIONNAME       "NTInfo"
-#define X_ORGANIZATIONDOMAIN     "ntinfo.biz"
-#define X_OPTIONSFILE            "xdepends.ini"
-#define X_SHORTCUTSFILE          "shortcuts.ini"
+#define X_APPLICATIONNAME "xdepends"
+#define X_APPLICATIONVERSION "0.01"
+#define X_ORGANIZATIONNAME "NTInfo"
+#define X_ORGANIZATIONDOMAIN "ntinfo.biz"
+#define X_OPTIONSFILE "xdepends.ini"
+#define X_SHORTCUTSFILE "shortcuts.ini"
 
 #endif  // GLOBAL_H
